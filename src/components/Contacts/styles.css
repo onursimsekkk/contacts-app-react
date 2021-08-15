@@ -9,3 +9,8 @@ input {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+ul, li {
+  margin: 0;
+  padding: 0
+}
