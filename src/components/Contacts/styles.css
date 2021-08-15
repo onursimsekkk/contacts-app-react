@@ -3,3 +3,7 @@
   background-color: dodgerblue;
   padding: 20px;
 }
+
+input {
+  width: 100%;
+}
