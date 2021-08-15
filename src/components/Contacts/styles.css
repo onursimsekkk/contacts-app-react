@@ -8,10 +8,52 @@ input {
   width: 100%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  padding: 6px 5px;
+  margin-bottom: 2px;
+  background-color: whitesmoke;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.list {
+  margin: 15px 0;
+}
+
+.list > li {
+  background-color: whitesmoke;
+  padding: 5px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 5px 20px;
+  color: rgb(0, 0, 80);
+  font-weight: 600;
+}
+
+.info-text {
+  color: #2e2e2e;
+  font-weight: 400;
+  font-size:  1.17em;
+}
+
+.name-info {
+  font-weight: 500;
+  color: rgb(0, 0, 80);
+}
+
+h3, h1 {
+  color: rgb(0, 0, 80);
 }
