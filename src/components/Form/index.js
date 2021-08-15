@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import phoneValidation from "../../utils/phoneValidation";
 
 function Form({ addContact, contacts }) {
   const [form, setForm] = useState({ fullname: "", phone_number: "" });
@@ -21,6 +22,7 @@ function Form({ addContact, contacts }) {
   return (
     <div>
       <div>
+        <h3>Add Person</h3>
         <input
           name="fullname"
           placeholder="Full Name"
@@ -36,8 +38,7 @@ function Form({ addContact, contacts }) {
           onChange={onChangeInput}
         />
       </div>
-      <h3>{}</h3>
-      <div>
+      <div className="btn-box">
         <button onClick={onSubmit}>Add</button>
       </div>
     </div>
