@@ -19,11 +19,15 @@ function List({ contacts }) {
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
       />
-      <ul>
+      <ul className="list">
         {filtered.map((contact, index) => (
-          <li key={index}>{contact.fullname}</li>
+          <li key={index}>
+            <span className="name-info">{contact.fullname}</span>
+            <span>{contact.phone_number}</span>
+          </li>
         ))}
       </ul>
+      <p className="info-text">(Total Person {filtered.length})</p>
     </div>
   );
 }
